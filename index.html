@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br" >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Quiz Melhor do Mundo Interior</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🌟 Quiz Melhor do Mundo Interior 🌟</h1>
+    <p class="subtitle">Escolha um tema e desafie seu conhecimento!</p>
+    <div class="card-container">
+      <div class="card" onclick="selectTheme('mente')">🧠 Mente & Psicologia</div>
+      <div class="card" onclick="selectTheme('filosofia')">📜 Filosofia Profunda</div>
+      <div class="card" onclick="selectTheme('espiritualidade')">🔮 Espiritualidade</div>
+      <div class="card" onclick="selectTheme('autoconhecimento')">✨ Autoconhecimento</div>
+      <div class="card" onclick="selectTheme('criatividade')">🎨 Criatividade</div>
+      <div class="card" onclick="selectTheme('motivacao')">🔥 Motivação</div>
+      <div class="card" onclick="selectTheme('historia')">🏰 História Interior</div>
+      <div class="card" onclick="selectTheme('linguagem')">🗣 Linguagem e Comunicação</div>
+    </div>
+  </div>
+
+  <script>
+    function selectTheme(theme) {
+      window.location.href = `quiz.html?tema=${theme}`;
+    }
+  </script>
+</body>
+</html>
